@@ -124,6 +124,25 @@ const f6 = () => {
 let a7 = [21, 22, 23, 24, 25, 26, 27];
 
 const f7 = (arr, elem) => {
+
+    const out = document.querySelector('.out-7');
+
+    for (const item of arr) {
+
+        if (elem === item) {
+
+            out.textContent = true;
+
+            break;
+
+        } else {
+
+            out.textContent = false;
+
+        }
+
+    }
+
 }
 
 // TASK 08
@@ -189,7 +208,7 @@ document.querySelector('.b-4').addEventListener('click', f4);
 document.querySelector('.b-5').addEventListener('click', f5);
 document.querySelector('.b-6').addEventListener('click', f6);
 document.querySelector('.b-7').addEventListener('click', () => {
-    f7(a7, 23);
+    f7(a7, 50);
 });
 document.querySelector('.b-8').addEventListener('click', f8);
 document.querySelector('.b-9').addEventListener('click', f9);
