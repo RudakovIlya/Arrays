@@ -1,5 +1,7 @@
 // TASK 01
+
 // По нажатию b-1 выполняется функция f1. Функция считывает значение из i-1 и с помощью indexOf и ищет данный элемент в массиве a1. Выводит в out-1 результат работы.
+
 // Как тестируется - ввожу числа и проверяю результат.
 
 
@@ -78,7 +80,7 @@ const f7 = (arr, elem) => {
 
 
 
-let a8 = [1, 2, 3, 1, 3, 2, 55, 23, 53, 24, 55,3, 1, 5, 2, 3, 5, 4,6,7,12, 53];
+let a8 = [1, 2, 3, 1, 3, 2, 55, 23, 53, 24, 55, 3, 1, 5, 2, 3, 5, 4, 6, 7, 12, 53];
 let res08 = [];
 
 const f8 = () => {
@@ -96,7 +98,7 @@ const f8 = () => {
 
 let a9 = [
     [55, 22, 33],
-    [3,4,22, 7],
+    [3, 4, 22, 7],
     [66, 2, 12, 55],
     [142, 12, 7, 15],
     [45, 12, 67, 32]
@@ -123,18 +125,18 @@ const f10 = (arr, elem) => {
 document.querySelector('.b-1').addEventListener('click', f1);
 document.querySelector('.b-2').addEventListener('click', f2);
 document.querySelector('.b-3').addEventListener('click', f3);
-document.querySelector('.b-4').addEventListener('click', ()=>{
+document.querySelector('.b-4').addEventListener('click', () => {
     f4(a4, '2'); // изучите какой индекс вывело. Разберитесь почему
-   // f4(a4, 2); // изучите какой индекс вывело. Разберитесь почему
+    // f4(a4, 2); // изучите какой индекс вывело. Разберитесь почему
 });
 document.querySelector('.b-5').addEventListener('click', f5);
 document.querySelector('.b-6').addEventListener('click', f6);
-document.querySelector('.b-7').addEventListener('click', ()=>{
+document.querySelector('.b-7').addEventListener('click', () => {
     let num = +document.querySelector('.i-7').value;
     f7(a7, num);
 });
 document.querySelector('.b-8').addEventListener('click', f8);
 document.querySelector('.b-9').addEventListener('click', f9);
-document.querySelector('.b-10').addEventListener('click', ()=>{
+document.querySelector('.b-10').addEventListener('click', () => {
     document.querySelector('.out-10').innerHTML = f10(a10, 8);
 });
