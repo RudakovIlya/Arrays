@@ -9,6 +9,12 @@ let a1 = [4, 12, 4, 2, 15, 98];
 
 const f1 = () => {
 
+    const iq = Number(document.querySelector('.i-1').value);
+
+    const out = document.querySelector('.out-1');
+
+    out.textContent = a1.indexOf(iq, 1);
+
 }
 
 // TASK 02
