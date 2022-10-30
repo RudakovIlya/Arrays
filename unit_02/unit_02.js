@@ -171,7 +171,13 @@ const f8 = () => {
 let a9 = ['A', 'b', 'c', 'C', 'D', 12, 5, 'd', 1];
 
 const f9 = () => {
-    console.log('09');
+
+    const iq = document.querySelector('.i-9').value;
+
+    const out = document.querySelector('.out-9');
+
+    out.textContent = a9.includes(iq.toUpperCase()) || a9.includes(iq.toLowerCase()) || a9.includes(+iq);
+
 }
 
 // TASK 10
