@@ -55,6 +55,27 @@ const f3 = () => {
 let a4 = { a: [1, 2, 3], b: [3, 1, 5, 8], c: [88, 77, 66] };
 
 const f4 = () => {
+
+    const iq = Number(document.querySelector('.i-4').value);
+
+    const out = document.querySelector('.out-4');
+
+    let str = '';
+
+    for (const key in a4) {
+
+        if (a4[key].includes(iq)) {
+
+            str += key + ' ';
+
+            continue;
+
+        }
+
+    }
+
+    out.textContent = str.length ? str : false;
+
 }
 
 // TASK 05
