@@ -112,6 +112,27 @@ const f6 = () => {
 let a7 = [21, 22, 23, 24, 25, 26, 27];
 
 const f7 = (arr, elem) => {
+
+    const out = document.querySelector('.out-7');
+
+    for (let i = 0; i < arr.length; i++) {
+
+        if (arr[i] === elem) {
+
+            out.textContent = i;
+
+            return;
+
+        } else {
+
+            out.textContent = -1;
+
+            return;
+
+        }
+
+    }
+
 }
 
 // TASK 08 * - сложная
