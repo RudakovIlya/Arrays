@@ -58,6 +58,11 @@ const f3 = () => {
 let a4 = [1, '1', 2, '2', '3'];
 
 const f4 = (arr, elem) => {
+
+    const out = document.querySelector('.out-4');
+
+    out.textContent = arr.indexOf(elem);
+
 }
 
 // TASK 05
@@ -145,7 +150,7 @@ document.querySelector('.b-2').addEventListener('click', f2);
 document.querySelector('.b-3').addEventListener('click', f3);
 document.querySelector('.b-4').addEventListener('click', () => {
     f4(a4, '2'); // изучите какой индекс вывело. Разберитесь почему
-    // f4(a4, 2); // изучите какой индекс вывело. Разберитесь почему
+    f4(a4, 2); // изучите какой индекс вывело. Разберитесь почему
 });
 document.querySelector('.b-5').addEventListener('click', f5);
 document.querySelector('.b-6').addEventListener('click', f6);
