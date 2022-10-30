@@ -108,6 +108,13 @@ const f5 = () => {
 let a6 = ['Hi', 'wiFI'];
 
 const f6 = () => {
+
+    const iq = document.querySelector('.i-6').value;
+
+    const out = document.querySelector('.out-6');
+
+    out.textContent = a6.includes(iq);
+
 }
 
 // TASK 07
