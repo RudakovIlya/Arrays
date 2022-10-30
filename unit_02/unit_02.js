@@ -203,27 +203,36 @@ const f10 = () => {
 const a11 = [[1, 2], { a: 1 }, true, '', [1], Infinity, undefined, null];
 
 const f11 = () => {
-    let c = [1, 2];
-    // c = {a:1};
-    // c = true;
-    // c = '';
-    // c = [1];
-    // c = Infinity;
-    // c = undefined;
-    // c = null;
+    //let c = [1, 2];
+    //c = { a: 1 };
+    //c = true;
+    //c = '';
+    //c = [1];
+    //c = Infinity;
+    //c = undefined;
+    //c = null;
     console.log(a11.includes(c));
 }
 
 document.querySelector('.b-1').addEventListener('click', f1);
+
 document.querySelector('.b-2').addEventListener('click', f2);
+
 document.querySelector('.b-3').addEventListener('click', f3);
+
 document.querySelector('.b-4').addEventListener('click', f4);
+
 document.querySelector('.b-5').addEventListener('click', f5);
+
 document.querySelector('.b-6').addEventListener('click', f6);
+
 document.querySelector('.b-7').addEventListener('click', () => {
     f7(a7, 50);
 });
 document.querySelector('.b-8').addEventListener('click', f8);
+
 document.querySelector('.b-9').addEventListener('click', f9);
+
 document.querySelector('.b-10').addEventListener('click', f10);
+
 document.querySelector('.b-11').addEventListener('click', f11);
