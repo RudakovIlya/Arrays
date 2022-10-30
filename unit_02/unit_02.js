@@ -2,12 +2,16 @@
 // По нажатию b-1 выполняется функция f1. Функция считывает значение из i-1 и с помощью includes ищет данный элемент в массиве a1. Выводит в out-1 результат работы метода.
 // Как тестируется - ввожу числа и проверяю результат.
 
-
 let a1 = [4, 12, 4, 2, 15, 98];
 
 const f1 = () => {
-    // обратите внимание в массиве только ЧИСЛА!
-    //
+
+    const iq = Number(document.querySelector('.i-1').value);
+
+    const out = document.querySelector('.out-1');
+
+    out.textContent = a1.includes(iq);
+
 }
 
 // TASK 02
@@ -26,7 +30,7 @@ const f2 = () => {
 // Как тестируется - ввожу числа и проверяю результат.
 
 
-let a3 = [[3,4,5], [6,7,1], [5,6,7,1,12], [134,234,432]];
+let a3 = [[3, 4, 5], [6, 7, 1], [5, 6, 7, 1, 12], [134, 234, 432]];
 
 const f3 = () => {
 }
@@ -35,7 +39,7 @@ const f3 = () => {
 // По нажатию b-4 выполняется функция f4. Функция считывает значение из i-4 и с помощью includes ищет данный элемент во вложенных массивах массива a4. Выводит в out-4  false, если такого элемента нет и ключ вложенного массива в котором такой элемент есть(если есть). Обратите внимание! Только числа! Если ключей несколько, то выводятся через пробел.
 
 
-let a4 = { a : [1,2,3], b : [3, 1, 5, 8], c : [88, 77, 66]};
+let a4 = { a: [1, 2, 3], b: [3, 1, 5, 8], c: [88, 77, 66] };
 
 const f4 = () => {
 }
@@ -51,7 +55,7 @@ const f4 = () => {
 let a5 = [22, 33, 44, 55, 66, 77, 88, 33, 44, 55, 66, 77];
 
 const f5 = () => {
- 
+
 }
 
 // TASK 06
@@ -115,10 +119,10 @@ const f10 = () => {
 // TASK 11
 // Ну и на прокачку ваших скиллов. Выполните код ниже. Изучите консоль. По очереди расскоментируйте строки  и смотрите на результат. Проанализируйте.
 
-const a11 = [[1,2] , {a : 1}, true, '', [1], Infinity, undefined, null];
+const a11 = [[1, 2], { a: 1 }, true, '', [1], Infinity, undefined, null];
 
 const f11 = () => {
-    let c = [1,2];
+    let c = [1, 2];
     // c = {a:1};
     // c = true;
     // c = '';
@@ -135,10 +139,10 @@ document.querySelector('.b-3').addEventListener('click', f3);
 document.querySelector('.b-4').addEventListener('click', f4);
 document.querySelector('.b-5').addEventListener('click', f5);
 document.querySelector('.b-6').addEventListener('click', f6);
-document.querySelector('.b-7').addEventListener('click', ()=>{
+document.querySelector('.b-7').addEventListener('click', () => {
     f7(a7, 23);
 });
 document.querySelector('.b-8').addEventListener('click', f8);
 document.querySelector('.b-9').addEventListener('click', f9);
-document.querySelector('.b-10').addEventListener('click',f10);
-document.querySelector('.b-11').addEventListener('click',f11);
+document.querySelector('.b-10').addEventListener('click', f10);
+document.querySelector('.b-11').addEventListener('click', f11);
