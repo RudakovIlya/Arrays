@@ -96,6 +96,13 @@ const f5 = () => {
 let a6 = '987123abcdefyttb4';
 
 const f6 = () => {
+
+    const iq = document.querySelector('.i-6').value;
+
+    const out = document.querySelector('.out-6');
+
+    out.textContent = a6.indexOf(iq);
+
 }
 
 // TASK 07
