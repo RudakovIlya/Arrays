@@ -42,6 +42,13 @@ const f2 = () => {
 let a3 = [4, 12, 4, 2, 15, 98];
 
 const f3 = () => {
+
+    const iq = Number(document.querySelector('.i-3').value);
+
+    const out = document.querySelector('.out-3');
+
+    out.textContent = a3.indexOf(iq) >= 0;
+
 }
 
 // TASK 04
