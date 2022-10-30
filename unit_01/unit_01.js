@@ -148,8 +148,6 @@ const f8 = () => {
 
     let idx = a8.indexOf(iq);
 
-    console.log(idx);
-
     for (let i = 0; i < a8.length; i++) {
 
         if (idx !== -1) {
@@ -183,6 +181,25 @@ let a9 = [
 ];
 
 const f9 = () => {
+
+    const iq = Number(document.querySelector('.i-9').value);
+
+    const out = document.querySelector('.out-9');
+
+    const indexes = [];
+
+    for (let i = 0; i < a9.length; i++) {
+
+        if (a9[i].indexOf(iq) !== -1) {
+
+            indexes.push(i);
+
+        }
+
+    }
+
+    out.textContent = indexes.join(' ');
+
 }
 
 // TASK 10
