@@ -214,7 +214,30 @@ const f9 = () => {
 let a10 = [67, '55', 2, 5, '4', '8', 8, '66', '54', 11];
 
 const f10 = (arr, elem) => {
+
+    let num;
+
+    for (let i = 0; i < arr.length; i++) {
+
+        if (arr[i] == elem) {
+
+            num = i;
+
+            break;
+
+        } else {
+
+            num = - 1;
+
+        }
+
+    }
+
+    return num;
+
 }
+let number;
+
 
 
 document.querySelector('.b-1').addEventListener('click', f1);
@@ -233,5 +256,5 @@ document.querySelector('.b-7').addEventListener('click', () => {
 document.querySelector('.b-8').addEventListener('click', f8);
 document.querySelector('.b-9').addEventListener('click', f9);
 document.querySelector('.b-10').addEventListener('click', () => {
-    document.querySelector('.out-10').innerHTML = f10(a10, 8);
+    document.querySelector('.out-10').innerHTML = f10(a10, 54);
 });
