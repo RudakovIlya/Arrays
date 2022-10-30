@@ -39,6 +39,13 @@ const f2 = () => {
 let a3 = [[3, 4, 5], [6, 7, 1], [5, 6, 7, 1, 12], [134, 234, 432]];
 
 const f3 = () => {
+
+    const iq = Number(document.querySelector('.i-3').value);
+
+    const out = document.querySelector('.out-3');
+
+    out.textContent = a3.some(item => item.includes(iq));
+
 }
 
 // TASK 04
