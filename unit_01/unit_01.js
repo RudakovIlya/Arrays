@@ -138,14 +138,32 @@ const f7 = (arr, elem) => {
 // TASK 08 * - сложная
 // По нажатию b-8 выполняется функция f8. Функция должна получить число из i-8 и с помощью цикла и indexOf найти все индексы данного числа в массиве a8. Индексы должны быть добавлены в res08. Результат (res08) выведите в out-8. Если число не встречается в массиве, то res08 должен быть пустым.
 
-
-
 let a8 = [1, 2, 3, 1, 3, 2, 55, 23, 53, 24, 55, 3, 1, 5, 2, 3, 5, 4, 6, 7, 12, 53];
+
 let res08 = [];
 
 const f8 = () => {
-    // ваш код
+
+    const iq = Number(document.querySelector('.i-8').value);
+
+    let idx = a8.indexOf(iq);
+
+    console.log(idx);
+
+    for (let i = 0; i < a8.length; i++) {
+
+        if (idx !== -1) {
+
+            res08.push(idx);
+
+            idx = a8.indexOf(iq, idx + 1);
+
+        }
+
+    }
+
     document.querySelector('.out-8').innerHTML = res08;
+
 }
 
 // TASK 09
