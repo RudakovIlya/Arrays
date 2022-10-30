@@ -77,6 +77,15 @@ const f4 = (arr, elem) => {
 let a5 = [22, 33, 44, 55, 66, 77, 88, 33, 44, 55, 66, 77];
 
 const f5 = () => {
+
+    const iq = Number(document.querySelector('.i-5-1').value);
+
+    const iq1 = Number(document.querySelector('.i-5-2').value);
+
+    const out = document.querySelector('.out-5');
+
+    out.textContent = a5.indexOf(iq, iq1);
+
 }
 
 // TASK 06
