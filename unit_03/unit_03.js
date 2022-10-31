@@ -49,6 +49,7 @@ const f3 = () => {
 
 
 let a4 = [1, 2];
+
 let a4_1 = [5, 6];
 
 const f4 = () => {
@@ -66,6 +67,12 @@ const f4 = () => {
 let a5 = [55, 66, 77];
 
 const f5 = () => {
+
+    const iq = Number(document.querySelector('.i-5').value);
+
+    a5[a5.length] = iq;
+
+    console.log(a5);
 
 }
 
