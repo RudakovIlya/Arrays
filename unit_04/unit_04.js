@@ -24,6 +24,14 @@ let a2 = ['b', 'c', 12, 34, 'dh', 17];
 
 const f2 = () => {
 
+    const iq = Number(document.querySelector('.i-2').value);
+
+    a2.unshift(iq, Math.pow(iq, 3));
+
+    console.log(a2);
+
+    return a2;
+
 }
 
 // TASK 03
