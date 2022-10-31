@@ -189,12 +189,24 @@ let a10_res;
 
 const f10 = (arr, fc) => {
 
-    // return ...
+    a10_res = []
+
+    for (let i = 0; i < arr.length; i++) {
+
+        a10_res.push(fc(arr[i]))
+
+    }
+
+    return a10_res;
+
 }
 
 function callback10(elem) {
-    // ваш код
-    // return
+
+    elem *= 2;
+
+    return elem;
+
 }
 
 
