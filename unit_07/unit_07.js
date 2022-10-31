@@ -132,7 +132,7 @@ const f7 = () => {
 
         }
 
-    })
+    }, 0)
 
     document.querySelector('.out-7').textContent = res2;
 
@@ -144,7 +144,10 @@ const f7 = () => {
 let a8 = [-2, 3, -4, 5, -6, 7]; // результат 15
 
 const f8 = () => {
-    // let res = a8.reduce((accum, item) => {
+
+    let res = a8.reduce((accum, item) => item > 0 ? accum += item : accum, 0);
+
+    document.querySelector('.out-8').textContent = res;
 }
 
 // TASK 09
