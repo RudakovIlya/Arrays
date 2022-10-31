@@ -105,7 +105,37 @@ const f6 = () => {
 let a7 = [3, -4, 5, -6, 7]; // результат 15
 
 const f7 = () => {
-    // let res = a7.reduce((accum, item) => {
+
+    let res = a7.reduce((accum, item) => item > 0 ? accum += item : accum);
+
+    let res2 = a7.reduce((accum, item) => {
+
+        console.log(`Первый accum: ${accum}`);
+
+        console.log(`Первый item: ${item}`);
+
+        if (item > 0) {
+
+            console.log(`Проверка if: accum = ${accum}; item: ${item}`);
+
+            accum += item
+            console.log((`Проверка if: возвращаю ${accum}`));
+            return accum
+
+        } else {
+
+            console.log(`Проверка else: accum = ${accum}; item: ${item}`);
+
+            console.log((`Проверка else: возвращаю ${accum}`));
+
+            return accum
+
+        }
+
+    })
+
+    document.querySelector('.out-7').textContent = res2;
+
 }
 
 // TASK 08
