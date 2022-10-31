@@ -122,6 +122,13 @@ const f8 = () => {
 let a9 = ['A', 2, 43, 12, 13, 14, 15, 16];
 
 const f9 = () => {
+
+    const newArr = a9.slice(2);
+
+    console.log(newArr);
+
+    console.log(a9);
+
 }
 
 // TASK 10
