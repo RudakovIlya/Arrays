@@ -95,12 +95,18 @@ const f5 = () => {
 // TASK 06
 //  По нажатию b-6 выполняется функция f6. Функция с помощью findIndex должна найти ПОСЛЕДНИЙ индекс элемента массива a6, значение которого лежит от a6_from до a6_to (больше a6_from но меньше a6_to). Вывести найденный индекс в out-6. Если значение не найдено то выводить false.
 
-
 let a6 = [13, 15, 22, 23, 26, 35, 72];
+
 let a6_from = 23;
+
 let a6_to = 67;
 
 const f6 = () => {
+
+	const out = document.querySelector('.out-6');
+
+	out.textContent = a6.findIndex(item => item > a5_from && item < a5_to);
+
 }
 
 // TASK 07
