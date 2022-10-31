@@ -84,6 +84,10 @@ let a6 = ['a', 'b'];
 
 const f6 = (arr, elem) => {
 
+    arr[arr.length] = elem;
+
+    return arr.length
+
 }
 
 // TASK 07
