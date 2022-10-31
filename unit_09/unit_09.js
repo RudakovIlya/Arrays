@@ -21,7 +21,7 @@ const f1 = () => {
 // TASK 02
 // По нажатию b-2 выполняется функция f2. Функция с помощью find должна найти первый элемент массива a2, значение которого лежит от a2_from до a2_to (больше a2_from но меньше a2_to). Вывести элемент в out-2. Если значение не найдено то выводить false.
 
-let a2 = [13, 15, 22, 23, 22226, 35, 72];
+let a2 = [13, 15, 22, 23, 26, 35, 72];
 
 let a2_from = 23;
 
@@ -33,7 +33,7 @@ const f2 = () => {
 
 	const find = a2.find(item => item > a2_from && item < a2_to);
 
-	out.textContent = find || find;
+	out.textContent = find ? find : false;
 
 }
 
@@ -41,11 +41,20 @@ const f2 = () => {
 // По нажатию b-3 выполняется функция f3. Функция с помощью FILTER должна найти все элементы массива a3, значение которых лежит от a3_from до a3_to (больше a3_from но меньше a3_to). Добавить их в a3_res, предварительно очистить a3_res. В out-3 вывести нулевой элемент массива a3_res. Считаем что в a3_res будет всегда минимум одно значение. 
 
 let a3 = [13, 15, 22, 23, 26, 35, 72];
+
 let a3_from = 14;
+
 let a3_to = 25;
+
 let a3_res = [];
 
 const f3 = () => {
+
+	a3_res = a3.filter(item => item > a3_from && item < a3_to);
+
+	const out = document.querySelector('.out-3');
+
+	out.textContent = a3_res[0];
 
 }
 
