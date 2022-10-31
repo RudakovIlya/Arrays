@@ -53,6 +53,10 @@ let a4_1 = [5, 6];
 
 const f4 = () => {
 
+    a4.push(a4_1);
+
+    console.log(a4);
+
 }
 
 // TASK 05
