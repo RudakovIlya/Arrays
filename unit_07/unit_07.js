@@ -245,8 +245,11 @@ const f13 = () => {
 let a14 = [[4, 4, 4], [4, 4], [4, 4, 4, 4], [4], [4, 4]];
 
 const f14 = () => {
-    // let res = 
+
+    let res = a14.reduce((accum, item) => accum.length > item.length ? accum : item);
+
     document.querySelector('.out-14').innerHTML = res;
+
 }
 
 // TASK 15
