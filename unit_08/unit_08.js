@@ -58,7 +58,6 @@ const f3 = () => {
 // TASK 04
 // По нажатию b-4 выполняется функция f4. Функция с помощью concat объединяет массив a4 и строку a4_1 с помощью метода concat. Результат поместите в a4_res. Результат выведите в out-4 через пробел.
 
-
 let a4 = [5, 7];
 
 let a4_1 = 'prime';
@@ -66,6 +65,15 @@ let a4_1 = 'prime';
 let a4_res;
 
 const f4 = () => {
+
+    const out = document.querySelector('.out-4');
+
+    a4_res = a4.concat(a4_1);
+
+    out.textContent = a4_res;
+
+    console.log(a4_res);
+
 }
 
 // TASK 05
