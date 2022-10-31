@@ -153,10 +153,32 @@ const f8 = () => {
 // По нажатию b-9 выполняется функция f9. Функция применяет к a9 метод map и создает два массива. a9_even содержит четные элементы a9, a9_index содержит ВСЕ индексы элементов a9. Выведите в консоль все массивы после выполнения f9.
 
 let a9 = [22, 13, 45, 5, 2, 5, 3, 6, 7, 9];
-let a9_index;
-let a9_even;
+
+let a9_index = [];
+
+let a9_even = [];
+
 
 const f9 = () => {
+
+    a9.map((item, index) => {
+
+        if (item % 2 === 0) {
+
+            a9_even.push(item);
+
+        }
+
+        a9_index.push(index);
+
+    });
+
+    console.log(a9);
+
+    console.log(a9_index);
+
+    console.log(a9_even);
+
 }
 
 // TASK 10
