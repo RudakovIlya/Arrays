@@ -92,7 +92,11 @@ const f5 = () => {
 let a6 = [2, 3, 4];
 
 const f6 = () => {
-    // let res = a6.reduce((accum, item) => {
+
+    let res = a6.reduce((accum, item) => accum *= item);
+
+    document.querySelector('.out-6').textContent = res;
+
 }
 
 // TASK 07
