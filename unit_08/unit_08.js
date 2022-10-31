@@ -9,6 +9,13 @@ let a1_1 = [55, 66, 77];
 let a1_res;
 
 const f1 = () => {
+
+    const out = document.querySelector('.out-1');
+
+    a1_res = a1.concat(a1_1);
+
+    out.textContent = a1_res.join(' ');
+
 }
 
 // TASK 02
