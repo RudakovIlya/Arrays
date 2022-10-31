@@ -125,6 +125,11 @@ n8 = 4;
 k8 = 3;
 
 const f8 = () => {
+
+    const out = document.querySelector('.out-8');
+
+    out.textContent = a8.splice(k8, n8);
+
 }
 
 // TASK 09
