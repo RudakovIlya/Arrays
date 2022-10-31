@@ -128,9 +128,15 @@ const f7 = () => {
 // По нажатию b-8 выполняется функция f8. Функция с помощью lastIndexOf должна найти наибольший индекс символа a8_1 в строке str8, и вывести out-8. Если значение не найдено то выводить -1. Реализуйте поиск независимо от регистра. 
 
 let str8 = 'C#CdABd$d@$Ab!#@#bcAaB@c$D#@AD$A!b#!D!BB@CaAD@###@';
+
 let a8_1 = 'a'; // 43 ожидаю и на a и на A
 
 const f8 = () => {
+
+	const out = document.querySelector('.out-8');
+
+	out.textContent = str8.split('').lastIndexOf(a8_1.toUpperCase());
+
 }
 
 // TASK 09
