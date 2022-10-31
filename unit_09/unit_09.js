@@ -61,12 +61,17 @@ const f3 = () => {
 // TASK 04
 // По нажатию b-4 выполняется функция f4. Функция с помощью FIND должна найти первый элемент строки str4, который лежит от a4_from, до a4_to(строго больше, строго меньше). Вывести результат в out-4. Если совпадений нет вывести undefined. Обратите внимание, find не работает со строками!
 
-
 let str4 = 'a_baba_galamaga_tvoe_korito_est_nesti';
+
 let a4_from = 'k';
+
 let a4_to = 't';
 
 const f4 = () => {
+
+	const out = document.querySelector('.out-4');
+
+	out.textContent = str4.split('_').find(item => item.indexOf(a4_from) !== -1 && item.lastIndexOf(a4_to) !== -1);
 
 }
 
