@@ -107,6 +107,13 @@ const f7 = () => {
 let a8 = [44, 45, 46, 47, 48, 49];
 
 const f8 = () => {
+
+    const newArr = a8.slice(1, 4);
+
+    console.log(a8);
+
+    console.log(newArr);
+
 }
 
 // TASK 09
