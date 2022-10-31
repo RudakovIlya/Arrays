@@ -156,6 +156,9 @@ const f8 = () => {
 let a9 = [-2, 3, -4, 5, -6, 7]; // 105
 
 const f9 = () => {
+
+    document.querySelector('.out-9').textContent = a9.reduce((accum, item) => item > 0 ? accum *= item : accum, 1);
+
 }
 
 // TASK 10
