@@ -78,11 +78,18 @@ const f4 = () => {
 // TASK 05
 // По нажатию b-5 выполняется функция f5. Функция с помощью findIndex должна найти индекс элемента массива a5, значение которого лежит от a5_from до a5_to (больше a5_from но меньше a5_to). Вывести найденный индекс в out-5. Если значение не найдено то выводить -1.
 
-let a5 = [13, 15, 22, 23, 26, 35, 72];
+let a5 = [13, 15, 22, 23, 23, 23, 23];
+
 let a5_from = 23;
+
 let a5_to = 67;
 
 const f5 = () => {
+
+	const out = document.querySelector('.out-5');
+
+	out.textContent = a5.findIndex(item => item > a5_from && item < a5_to);
+
 }
 
 // TASK 06
