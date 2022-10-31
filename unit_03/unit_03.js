@@ -113,6 +113,9 @@ const f7 = () => {
 let a8 = [99, 98, 97, 96];
 
 const f8 = () => {
+
+    return a8.pop();
+
 }
 
 // TASK 09
