@@ -35,9 +35,13 @@ const f2 = () => {
 let a3 = ['a', 'b'];
 
 const f3 = () => {
-    // ваш код
-    // console.log(a3.push(ваша переменная));
-    // console.log(a3);
+
+    const iq = document.querySelector('.i-3').value;
+
+    console.log(a3.push(iq));
+
+    console.log(a3);
+
 }
 
 // TASK 04
