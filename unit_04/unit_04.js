@@ -94,6 +94,10 @@ let a7 = [21, 22, 23, 24, 25, 26, 27];
 
 const f7 = () => {
 
+    a7.shift();
+
+    console.log(a7.length);
+
 }
 
 // TASK 08
