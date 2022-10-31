@@ -138,6 +138,20 @@ const a10 = [67, '55', 2, 5, '4', '8', 8, '66', '54', 11];
 
 const f10 = () => {
 
+    let num = a10[a10.length - 1];
+
+    if (a10.length) {
+
+        a10.length = a10.length - 1;
+
+    } else {
+
+        return undefined;
+
+    }
+
+    return num;
+
 }
 
 
