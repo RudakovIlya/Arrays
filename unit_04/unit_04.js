@@ -6,6 +6,15 @@ let a1 = ['hello', 't'];
 
 const f1 = () => {
 
+    const iq = document.querySelector('.i-1').value;
+
+    a1.unshift(iq);
+
+    console.log(a1);
+
+    return a1;
+
+
 }
 
 // TASK 02
