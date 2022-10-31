@@ -201,12 +201,12 @@ const f11 = () => {
 
             return accum;
 
-        } else {
-
-            accum = item;
-
         }
+
+        accum = item;
+
         return accum;
+
     })
 
     document.querySelector('.out-11').innerHTML = res;
