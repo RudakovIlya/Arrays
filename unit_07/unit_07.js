@@ -278,6 +278,16 @@ let a16 = [
 
 const f16 = () => {
 
+    let res = a16.reduce((accum, item) => {
+
+        accum[item.id] = item["name"];
+
+        return accum;
+
+    }, {})
+
+    document.querySelector('.out-16').innerHTML = Object.entries(res).map(item => item.join(': ')).join('; ');
+
 }
 
 // TASK 17
