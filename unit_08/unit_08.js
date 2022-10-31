@@ -3,7 +3,9 @@
 
 
 let a1 = [5, 6, 7];
+
 let a1_1 = [55, 66, 77];
+
 let a1_res;
 
 const f1 = () => {
@@ -13,7 +15,9 @@ const f1 = () => {
 // По нажатию b-2 выполняется функция f2. Функция с помощью concat объединяет строки a2 и a2_1 в строку a2_res. Результирующая строка выводится в out-2.
 
 let a2 = 'test'
+
 let a2_1 = 'best';
+
 let a2_res;
 
 const f2 = () => {
@@ -25,7 +29,9 @@ const f2 = () => {
 
 
 let a3 = 'some_text';
+
 let a3_1 = [5, 7];
+
 let a3_res;
 
 const f3 = () => {
@@ -37,7 +43,9 @@ const f3 = () => {
 
 
 let a4 = [5, 7];
+
 let a4_1 = 'prime';
+
 let a4_res;
 
 const f4 = () => {
@@ -54,6 +62,7 @@ const f5 = (ar1, ar2) => {
 
 
 // для примера я написал 1, но тестировать буду с любым количеством
+
 const f6 = (arg1) => {
 }
 
@@ -69,7 +78,9 @@ const f7 = () => {
 // По нажатию b-8 выполняется функция f8. Функция удалить n8 элементoв из a8 начиная со k8 индекса с помощью splice. Выведите a8 в out-8 через пробел.
 
 let a8 = [100, 90, 80, 70, 60, 50, 40, 30, 20, 10, 1];
+
 n8 = 4;
+
 k8 = 3;
 
 const f8 = () => {
@@ -87,29 +98,42 @@ const f9 = () => {
 // Напишите функцию эмуляцию splice. Функция принимает 4 параметра - исходный массив, индекс с которого удалять, количество удаляемых элементов, и массив с новыми элементами, которые нужно добавить. Возвращает НОВЫЙ массив на основе исходного и условий.
 
 let a10 = [-2, 3, -4, 5, -6, 7];  // [15,-12]
+
 let from = 2;
+
 let num = 3;
+
 let add = [999, 1000]
 
 // что хочу получить в результате работы функции - [-2, 3, 999,1000,  7]
+
 const f10 = (arr, from, num, add) => {
 }
 
 
 
 document.querySelector('.b-1').addEventListener('click', f1);
+
 document.querySelector('.b-2').addEventListener('click', f2);
+
 document.querySelector('.b-3').addEventListener('click', f3);
+
 document.querySelector('.b-4').addEventListener('click', f4);
+
 document.querySelector('.b-5').addEventListener('click', () => {
     document.querySelector('.out-5').innerHTML = f5([3, 4, 5], [6, 7, 8]);
 });
+
 document.querySelector('.b-6').addEventListener('click', () => {
     document.querySelector('.out-6').innerHTML = f6([2, 3], ['hi'], [6, 7, 8], [23, 5]);
 });
+
 document.querySelector('.b-7').addEventListener('click', f7);
+
 document.querySelector('.b-8').addEventListener('click', f8);
+
 document.querySelector('.b-9').addEventListener('click', f9);
+
 document.querySelector('.b-10').addEventListener('click', () => {
     document.querySelector('.out-10').innerHTML = f10(a10, from, num, add);
 });
