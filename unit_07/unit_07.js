@@ -219,8 +219,11 @@ const f11 = () => {
 let a12 = [-2, 3, 14, 15, -6, 7];
 
 const f12 = () => {
-    // let res = a12.reduce(
+
+    let res = a12.reduce((accum, item, index, arr) => item > arr[accum] ? index : accum, 0);
+
     document.querySelector('.out-12').innerHTML = res;
+
 }
 
 // TASK 13
