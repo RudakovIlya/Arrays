@@ -97,6 +97,12 @@ let a7 = [21, 22, 23, 24, 25, 26, 27];
 
 const f7 = () => {
 
+    a7.pop();
+
+    console.log(a7);
+
+    console.log(a7.pop());
+
 }
 
 // TASK 08
