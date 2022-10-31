@@ -167,7 +167,23 @@ const f9 = () => {
 let a10 = [-2, 3, -4, 5, -6, 7];  // [15,-12]
 
 const f10 = () => {
-    // let res = a10.reduce( (accum, item) => {
+
+    let s = 0;
+
+    let m = 0
+
+    let res = a10.reduce((accum, item) => {
+        if (item > 0) {
+            s += item
+
+        } else {
+            m += item
+
+        }
+        console.log([s, m]);
+        return [s, m]
+
+    }, [])
     document.querySelector('.out-10').innerHTML = res;
 }
 
