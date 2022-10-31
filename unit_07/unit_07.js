@@ -15,8 +15,10 @@ const f1 = () => {
 //Выполним эмуляцию метода isArray. В качестве критерия будем проверять следующее - содержимое переменной можно перебрать с помощью цикла for let i = . Т.е. все индексы должны быть числами. Функция должна выводить в out-2 true или false, в зависимости от того, что лежит в a2. Проверьте функцию на переменных указанных в комментариях.
 
 let a2 = [22, 33, 44, 55, 66, 77, 88, 99];
-a2 = 'hello';
-a2 = new Set([2, 3]);
+
+//a2 = 'hello';
+
+//a2 = new Set([2, 3]);
 
 const f2 = () => {
 
@@ -30,15 +32,13 @@ const f2 = () => {
 
             continue
 
-        } else {
-
-            out.textContent = false;
-
-            return;
-
         }
 
+        return;
+
     }
+
+    return out.textContent = false;
 
 }
 
@@ -79,7 +79,11 @@ const f4 = () => {
 let a5 = [2, 3, 4, 5, 6];
 
 const f5 = () => {
-    // let res = a5.reduce((accum, item) => {
+
+    let res = a5.reduce((accum, item) => accum += item);
+
+    document.querySelector('.out-5').textContent = res;
+
 }
 
 // TASK 06
