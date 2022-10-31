@@ -72,7 +72,9 @@ const f4 = () => {
 let a5 = [55, 66, 77, 88, 99, 129];
 
 const f5 = () => {
-    // return a5.shift();
+
+    return a5.shift();
+
 }
 
 // TASK 06
