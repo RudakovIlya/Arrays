@@ -141,6 +141,12 @@ let a8_res;
 
 const f8 = () => {
 
+    a8_res = a8.map(item => item.reduce((accum, item) => accum += item));
+
+    console.log(a8);
+
+    console.log(a8_res);
+
 }
 
 // TASK 09
