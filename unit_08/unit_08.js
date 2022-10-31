@@ -1,7 +1,6 @@
 // TASK 01
 // По нажатию b-1 выполняется функция f1. Функция с помощью concat объединяет массивы a1 и a1_1 в массив a1_res. Результирующий массив выводится в out-1 ( каждый элемент через пробел).
 
-
 let a1 = [5, 6, 7];
 
 let a1_1 = [55, 66, 77];
@@ -28,6 +27,12 @@ let a2_1 = 'best';
 let a2_res;
 
 const f2 = () => {
+
+    const out = document.querySelector('.out-2');
+
+    a2_res = a2.concat(a2_1);
+
+    out.textContent = a2_res;
 
 }
 
