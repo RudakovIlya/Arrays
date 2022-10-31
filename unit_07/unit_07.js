@@ -1,10 +1,11 @@
 // TASK 01
 // По нажатию b-1 выполняется функция f1. Функция с помощью isArray проверяет a1. Результат проверки - вывести в out-1. Проверьте на строке и set.
 
-
 let a1 = [5, 6, 7, 8, 44, 21, 43, 26, 78, 100, -2, 0, 17];
-// a1 = 'hello';
-// a1 = new Set([2, 3]);
+
+a1 = 'hello';
+
+a1 = new Set([2, 3]);
 
 const f1 = () => {
     document.querySelector('.out-1').innerHTML = Array.isArray(a1);

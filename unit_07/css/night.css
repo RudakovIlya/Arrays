@@ -1,13 +1,21 @@
-body{
+body {
     background-color: #333333;
     color: #6a9955;
 }
 
-h1, h2, h3, h4, h5, h6, h7 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
     color: #e8e7e7;
 }
 
-a, a:hover, a:visited {
+a,
+a:hover,
+a:visited {
     color: #a2c9ff;
 }
 
@@ -15,13 +23,25 @@ section {
     border-bottom: 1px solid #466638;
 }
 
-.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
-
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
     color: #6a9955;
     border: 1px solid #6a9955;
 }
 
-.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:focus, button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
     color: #5ca83a;
     border-color: #5ca83a;
     outline: 0;
