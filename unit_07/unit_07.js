@@ -258,8 +258,11 @@ const f14 = () => {
 let a15 = [0, 0, 1, 1, 1, 0, 2, 2, 3, 3, 3, 4, 5, 5, 6, 4, 4, 3, 1, 1, 0, 0, -1];
 
 const f15 = () => {
-    // let res = a15.reduce((accum, item) => 
+
+    let res = a15.reduce((accum, item) => accum += item) / a15.length;
+
     document.querySelector('.out-15').innerHTML = res;
+
 }
 
 // TASK 16
