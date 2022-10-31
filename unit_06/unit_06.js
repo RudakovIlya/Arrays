@@ -98,9 +98,14 @@ let a7 = [
     { "user": "shurik", "pass": "71b" },
     { "user": "zorik", "pass": "362617b302" }
 ];
+
 let z7 = [];
 
 const f7 = () => {
+
+    z7 = a7.filter(item => item.pass.length >= 6);
+
+    console.log(z7);
 
 }
 
