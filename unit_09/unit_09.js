@@ -112,11 +112,16 @@ const f6 = () => {
 // TASK 07
 // По нажатию b-7 выполняется функция f7. Функция с помощью lastIndexOf должна найти наибольший индекс символа a7_1 в строке str7, и вывести out-7. Если значение не найдено то выводить -1. Обратите внимание, что lastIndexOf зависит от регистра. 
 
-
 let str7 = 'cccaBCcbBDabBddcCadcDbACacbbCdbBCADBDBdaAdcCd';
+
 let a7_1 = 'C'; // 43
 
 const f7 = () => {
+
+	const out = document.querySelector('.out-7');
+
+	out.textContent = str7.split('').lastIndexOf(a7_1);
+
 }
 
 // TASK 08
