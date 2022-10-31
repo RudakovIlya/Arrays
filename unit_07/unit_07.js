@@ -232,7 +232,11 @@ const f12 = () => {
 let a13 = [[4, 4, 4], [4, 4], [4, 4, 4, 4], [4], [4, 4]];
 
 const f13 = () => {
-    // let res = a13.reduce((accum, item) => 
+
+    let res = a13.reduce((accum, item) => accum.length > item.length ? accum : item).length;
+
+    document.querySelector('.out-13').innerHTML = res;
+
 }
 
 // TASK 14
