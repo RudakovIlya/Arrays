@@ -124,6 +124,11 @@ const f8 = () => {
 let a9 = ['A', 2, true, function () { console.log(2) }, [2, 3, 4], { "test": 1 }];
 
 const f9 = () => {
+
+    a9.pop();
+
+    console.log(a9);
+
 }
 
 // TASK 10
