@@ -108,6 +108,11 @@ const f6 = (...arg1) => {
 let a7 = [3, -4, 5, -6, 7, 45, 67];
 
 const f7 = () => {
+
+    const out = document.querySelector('.out-7');
+
+    out.textContent = a7.splice(2, 3);
+
 }
 
 // TASK 08
