@@ -39,7 +39,6 @@ const f2 = () => {
 // TASK 03
 //По нажатию b-3 выполняется функция f3. Функция с помощью concat объединяет строки a3 и массив a3_1 с помощью метода concat. Результат поместите в строку a3_res. Результирующая строка выводится в out-3.
 
-
 let a3 = 'some_text';
 
 let a3_1 = [5, 7];
@@ -47,6 +46,12 @@ let a3_1 = [5, 7];
 let a3_res;
 
 const f3 = () => {
+
+    const out = document.querySelector('.out-3');
+
+    a3_res = a3.concat(a3_1);
+
+    out.textContent = a3_res;
 
 }
 
