@@ -303,6 +303,10 @@ let a17_res = [];
 
 const f17 = () => {
 
+    a17_res = Object.values(a17);
+
+    document.querySelector('.out-17').innerHTML = a17_res.join(' ');
+
 }
 
 // TASK 18
