@@ -138,24 +138,37 @@ const a10 = [100, 2, 43, 12, 13, 14, 15, 16];
 
 const f10 = () => {
 
+    const newArr = a10.slice(2, -2);
+
+    console.log(newArr);
+
+    console.log(a10);
+
 }
 
 
 document.querySelector('.b-1').addEventListener('click', f1);
+
 document.querySelector('.b-2').addEventListener('click', f2);
-document.querySelector('.b-3').addEventListener('click', f3);
+
 document.querySelector('.b-4').addEventListener('click', f4);
+
 document.querySelector('.b-5').addEventListener('click', () => {
     console.log(f5());
     console.log(a5);
 });
+
 document.querySelector('.b-6').addEventListener('click', () => {
     let elem = document.querySelector('.i-6').value;
     console.log(f6(elem));
 });
+
 document.querySelector('.b-7').addEventListener('click', () => {
     console.log(f7());
 });
+
 document.querySelector('.b-8').addEventListener('click', f8);
+
 document.querySelector('.b-9').addEventListener('click', f9);
-document.querySelector('.b-10').addEventListener('click', f10());
+
+document.querySelector('.b-10').addEventListener('click', f10);
