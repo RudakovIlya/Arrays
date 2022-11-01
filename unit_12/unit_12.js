@@ -120,7 +120,7 @@ const f7 = () => {
         if (index == 2) {
             a7.push(2);
         }
-        // тут ваш if....
+        if (item > a7_from) return true
     });
     document.querySelector('.out-7').innerHTML = res;
 }
