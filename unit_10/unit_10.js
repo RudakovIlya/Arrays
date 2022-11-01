@@ -34,6 +34,12 @@ let a3 = [[44, 55, 66], [77, 88, 99]]; // ожидаю 66 55 44 99 88 77
 
 const f3 = () => {
 
+    const out = document.querySelector('.out-3');
+
+    let a3_res = a3.map(item => item.reverse().join(' ')).join(' ');
+
+    out.textContent = a3_res;
+
 }
 
 // TASK 04
