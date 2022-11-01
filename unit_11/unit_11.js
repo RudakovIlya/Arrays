@@ -18,6 +18,10 @@ let a2 = [13, 15, 22, 23, 26, 35, 72];
 
 const f2 = () => {
 
+    const out = document.querySelector('.out-2');
+
+    out.textContent = a2.join('- ');
+
 }
 
 // TASK 03
