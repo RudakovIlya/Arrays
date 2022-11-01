@@ -101,6 +101,11 @@ let a6 = [1, 4, 2, 6, 7, 3, 5, 2, 9];
 let a6_from = 1
 
 const f6 = () => {
+
+    const out = document.querySelector('.out-6');
+
+    out.textContent = a6.every(item => item > a6_from);
+
 }
 
 // TASK 07
