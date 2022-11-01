@@ -116,13 +116,21 @@ let a7 = [10, 20, 30];
 let a7_from = 5;
 
 const f7 = () => {
+
     let res = a7.every((item, index) => {
+
         if (index == 2) {
+
             a7.push(2);
+
         }
+
         if (item > a7_from) return true
+
     });
+
     document.querySelector('.out-7').innerHTML = res;
+
 }
 
 // TASK 08
