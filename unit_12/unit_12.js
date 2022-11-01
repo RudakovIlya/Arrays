@@ -139,6 +139,11 @@ const f7 = () => {
 let a8 = [10, 4, 20, 6, 70, 30, 500, 2, 9];
 
 const f8 = () => {
+
+    const out = document.querySelector('.out-8');
+
+    out.textContent = a8.some(item => item > 100);
+
 }
 
 // TASK 09
