@@ -68,6 +68,7 @@ const f4 = () => {
 // По нажатию b-5 выполняется функция f5. Функция с помощью every проверяет, что все совершеннолетние пользователи (больше или равно 16 лет) провели оплату ( pay - true). Результат проверки вывести в out-5. 
 
 let a5 = [
+
     { "name": "Akemi", "age": 33, "pay": true },
 
     { "name": "Den", "age": 23, "pay": true },
@@ -78,13 +79,18 @@ let a5 = [
 
     { "name": "Tadako", "age": 47, "pay": true },
 
-    { "name": "Tomiko", "age": 15, "pay": false },
+    { "name": "Tomiko", "age": 17, "pay": true },
 
     { "name": "Utano", "age": 56, "pay": true }
 
 ];
 
 const f5 = () => {
+
+    const out = document.querySelector('.out-5');
+
+    out.textContent = a5.every(item => item.age > 16 && item.pay);
+
 }
 
 // TASK 06
