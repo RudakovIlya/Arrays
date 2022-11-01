@@ -71,10 +71,25 @@ let a5 = [1, 2, 3, 4, 5, 6, 7, 8]; // ожидаю [2, 1, 4, 3, 6, 5, 8, 7]
 
 const f5 = () => {
 
-    const newArr = [];
+    let res = [];
 
+    for (let i = 0; i < a5.length; i++) {
 
+        if (i % 2 === 0) {
 
+            res.push(a5[i + 1]);
+
+        } else {
+
+            res.push(a5[i - 1])
+
+        }
+
+    }
+
+    const out = document.querySelector('.out-5');
+
+    out.textContent = res;
 }
 
 // TASK 06
