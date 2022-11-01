@@ -125,6 +125,13 @@ let s8 = 'abrikos';
 let a8_res = '';
 
 const f8 = () => {
+
+    const out = document.querySelector('.out-8');
+
+    a8_res = s8.split('').reverse().join('');
+
+    out.textContent = a8_res;
+
 }
 
 // TASK 09
