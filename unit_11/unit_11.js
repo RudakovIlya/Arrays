@@ -76,6 +76,11 @@ a5[56] = 56;
 a5[57] = 56;
 
 const f5 = () => {
+
+    const out = document.querySelector('.out-5');
+
+    out.textContent = a5.join('=');
+
 }
 
 // TASK 06 
