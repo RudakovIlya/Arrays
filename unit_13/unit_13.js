@@ -22,6 +22,12 @@ let a2_res = [];
 
 const f2 = () => {
 
+    const out = document.querySelector('.out-2');
+
+    a2_res = a2.flat(1);
+
+    out.textContent = a2_res.join(' ');
+
 }
 
 // TASK 03
