@@ -70,6 +70,11 @@ const f4 = () => {
 let a5 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const f5 = () => {
+
+    const out = document.querySelector('.out-5');
+
+    out.textContent = a5.fill(0, 2);
+
 }
 
 // TASK 06 
