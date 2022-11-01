@@ -31,6 +31,10 @@ let a3 = [13, 15, 22, 23, 26, 35, 72];
 
 const f3 = () => {
 
+    const out = document.querySelector('.out-3');
+
+    out.textContent = a3.join('=');
+
 }
 
 // TASK 04
