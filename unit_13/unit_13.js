@@ -7,6 +7,10 @@ let a1_res = [];
 
 const f1 = () => {
 
+    const out = document.querySelector('.out-1');
+
+    out.textContent = a1.flat(1).join(' ');
+
 }
 
 // TASK 02
