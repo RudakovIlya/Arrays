@@ -83,9 +83,14 @@ const f5 = () => {
 
 
 let a6 = [1, 4, 2, 6, 7, 3, 5, 2, 9];
-// a6 = ['hi', 'low', 'lo', 'hihi'];
+a6 = ['hi', 'low', 'lo', 'hihi'];
 
 const f6 = () => {
+
+    const out = document.querySelector('.out-6');
+
+    out.textContent = a6.sort();
+
 }
 
 // TASK 07
