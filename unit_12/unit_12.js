@@ -150,6 +150,7 @@ const f8 = () => {
 // Напишите функцию f9, которая запускается по кнопке b-9. Функция проверяет массив a9 с помощью some на наличие пользователей с возрастом меньше или равным 16. Результат выводит в out-9.
 
 let a9 = [
+
     { "name": "Ivan", "age": 34 },
 
     { "name": "Petro", "age": 24 },
@@ -171,6 +172,11 @@ let a9 = [
 ];
 
 const f9 = () => {
+
+    const out = document.querySelector('.out-9');
+
+    out.textContent = a9.some(item => item.age < 16);
+
 }
 
 // TASK 10
