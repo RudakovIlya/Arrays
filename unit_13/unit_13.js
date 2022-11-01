@@ -43,6 +43,12 @@ let a3_res = [];
 
 const f3 = () => {
 
+    const out = document.querySelector('.out-3');
+
+    a3_res = a3.flat(2);
+
+    out.textContent = a3_res.join(' ');
+
 }
 
 // TASK 04
