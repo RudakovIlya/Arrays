@@ -159,6 +159,11 @@ let s10 = 'fghijklmnoprsq';
 let a10_res = [];
 
 const f10 = () => {
+
+    a10_res = [...s10.split('')].filter(item => item < 'l');
+
+    console.log(a10_res);
+
 }
 
 document.querySelector('.b-1').addEventListener('click', f1);
