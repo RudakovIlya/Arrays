@@ -9,6 +9,10 @@ let a1_to = 100;
 
 const f1 = () => {
 
+    const out = document.querySelector('.out-1');
+
+    out.textContent = a1.every(item => item > a1_from && item < a1_to);
+
 }
 
 // TASK 02
