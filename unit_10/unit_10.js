@@ -152,6 +152,11 @@ let a10 = [
 ];
 
 const f10 = () => {
+
+    const out = document.querySelector('.out-10');
+
+    out.textContent = a10.sort((a, b) => a.age - b.age).map(item => item.name).join(' ');
+
 }
 
 
