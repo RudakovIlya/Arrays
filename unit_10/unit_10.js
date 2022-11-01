@@ -50,6 +50,18 @@ let a4 = [55, 66, 77, 88, 99];
 
 const f4 = () => {
 
+    const out = document.querySelector('.out-4');
+
+    const reverseArray = [];
+
+    for (let i = a4.length - 1; i >= 0; i--) {
+
+        reverseArray.push(a4[i])
+
+    }
+
+    out.textContent = reverseArray.join(' ');
+
 }
 
 // TASK 05
