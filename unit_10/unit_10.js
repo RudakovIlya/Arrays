@@ -6,6 +6,10 @@ let a1 = [22, 33, 44, 55, 66, 77, 88];
 
 const f1 = () => {
 
+    const out = document.querySelector('.out-1');
+
+    out.textContent = a1.reverse().join(' ');
+
 }
 
 
@@ -44,6 +48,12 @@ const f4 = () => {
 let a5 = [1, 2, 3, 4, 5, 6, 7, 8]; // ожидаю [2, 1, 4, 3, 6, 5, 8, 7]
 
 const f5 = () => {
+
+    const newArr = [];
+
+    for (let i = 0; i < a5.length; i++) {
+    }
+    console.log(newArr);
 }
 
 // TASK 06
