@@ -58,6 +58,10 @@ let a4 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const f4 = () => {
 
+    const out = document.querySelector('.out-4');
+
+    out.textContent = a4.fill(7, 2, 5)
+
 }
 
 // TASK 05
