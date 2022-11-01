@@ -20,6 +20,10 @@ let s2 = 'mazahackercrackall';
 
 const f2 = () => {
 
+    const out = document.querySelector('.out-2');
+
+    out.textContent = s2.split('').reverse().join('');
+
 }
 
 // TASK 03
