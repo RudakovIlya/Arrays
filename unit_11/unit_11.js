@@ -5,6 +5,10 @@ let a1 = [13, 15, 22, 23, 26, 35, 72];
 
 const f1 = () => {
 
+    const out = document.querySelector('.out-1');
+
+    out.textContent = a1.join(' ');
+
 }
 
 // TASK 02
