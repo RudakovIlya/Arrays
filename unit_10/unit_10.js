@@ -73,9 +73,8 @@ const f5 = () => {
 
     const newArr = [];
 
-    for (let i = 0; i < a5.length; i++) {
-    }
-    console.log(newArr);
+
+
 }
 
 // TASK 06
@@ -113,6 +112,11 @@ const f7 = () => {
 let a8 = [10, 4, 20, 6, 70, 30, 5, 2, 9];
 
 const f8 = () => {
+
+    const out = document.querySelector('.out-8');
+
+    out.textContent = a8.sort((a, b) => b - a).join(' ');
+
 }
 
 // TASK 09
