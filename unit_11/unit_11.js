@@ -92,7 +92,14 @@ let a6_res = [];
 
 const f6 = () => {
 
-    // document.querySelector('.out-6').innerHTML = result;
+    for (const char of s6) {
+
+        a6_res.push(char);
+
+    }
+
+    document.querySelector('.out-6').innerHTML = a6_res; /* or s6.split('') */
+
 }
 
 // TASK 07
