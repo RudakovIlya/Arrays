@@ -44,10 +44,10 @@ const f3 = () => {
     out.textContent = a3.every(item => item.reduce((accum, item) => accum += item) > 20);
 
 }
+
 // В задаче 3 для вычисления суммы массива можно использовать вспомогательную доп. функцию которая считает сумму элементов.
 
 const summa = (arr) => {
-    // return ///
 }
 
 // TASK 04
@@ -57,6 +57,10 @@ const summa = (arr) => {
 let a4 = [[100, 200], [300, 100, 400], [500, 700, 100, 800]];
 
 const f4 = () => {
+
+    const out = document.querySelector('.out-4');
+
+    out.textContent = a4.every(item => item.includes(100));
 
 }
 
