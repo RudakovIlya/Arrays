@@ -187,10 +187,16 @@ let a10 = [10, 20, 30, 50, 60];
 let a10_from = 55;
 
 const isBigFrom = num => {
-    // где в качестве num вы передаете a10_from
+
+    if (num > a10_from) return true;
+
 }
 
 const f10 = () => {
+
+    const out = document.querySelector('.out-10');
+
+    out.textContent = a10.some(isBigFrom);
 
 }
 
