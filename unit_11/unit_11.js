@@ -110,7 +110,11 @@ let s7 = 'hello';
 let a7_res = [];
 
 const f7 = () => {
-    // document.querySelector('.out-7').innerHTML = result;
+
+    a7_res = s7.slice(0, 3).split('');
+
+    document.querySelector('.out-7').innerHTML = a7_res;
+
 }
 
 // TASK 08
