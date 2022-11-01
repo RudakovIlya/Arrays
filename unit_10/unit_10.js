@@ -125,7 +125,16 @@ const f8 = () => {
 let a9 = [9, 9, 45, 3, 1, 83, 50, 6, 5, 35, 8, 4];
 
 const f9 = (s) => {
-}
+
+    return a9.sort((a, b) => {
+
+        if (s === 'ASC') return a - b;
+
+        else return b - a;
+
+    });
+
+};
 
 // TASK 10
 // По нажатию b-10 выполняется функция f10. Функция сортирует массив a10 по полю age (по позрастанию) и выводит имена (после сортировки) в out-10. Вывод через пробел.
@@ -156,6 +165,6 @@ document.querySelector('.b-6').addEventListener('click', f6);
 document.querySelector('.b-7').addEventListener('click', f7);
 document.querySelector('.b-8').addEventListener('click', f8);
 document.querySelector('.b-9').addEventListener('click', () => {
-    document.querySelector('.out-9').innerHTML = f9('ASC');
+    document.querySelector('.out-9').innerHTML = f9('DESC');
 });
 document.querySelector('.b-10').addEventListener('click', f10);
