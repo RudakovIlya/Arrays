@@ -93,8 +93,16 @@ const f6 = (l, n) => {
 // TASK 07
 // По нажатию b-7 выполняется функция f7. Функция принимает параметр - длину массива и возвращает массив заполненный случайными целыми числами от 0 до 100 включительно указанной длины. 
 
+const getRandomNum = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
 const f7 = (l) => {
+
+    const newArr = [];
+
+    for (let i = 0; i < l; i++) newArr.push(getRandomNum(0, 100));
+
+    return newArr;
+
 }
 
 // TASK 08
