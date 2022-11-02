@@ -82,6 +82,12 @@ const f5 = () => {
 
 const f6 = (l, n) => {
 
+    const newArr = [];
+
+    for (let i = 0; i < l; i++) newArr.push(n);
+
+    return newArr;
+
 }
 
 // TASK 07
