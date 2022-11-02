@@ -189,12 +189,12 @@ document.querySelector('.b-4').addEventListener('click', f4);
 document.querySelector('.b-5').addEventListener('click', f5);
 
 document.querySelector('.b-6').addEventListener('click', () => {
-    let arr = f6(4, 7); // ожидаю [7,7,7,7];
+    let arr = f6(4, 7);
     document.querySelector('.out-6').innerHTML = arr;
 });
 
 document.querySelector('.b-7').addEventListener('click', () => {
-    let arr = f7(4); // ожидаю [99, 23, 11, 3]; например
+    let arr = f7(4);
     document.querySelector('.out-7').innerHTML = arr;
 });
 
