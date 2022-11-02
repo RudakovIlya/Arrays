@@ -165,6 +165,17 @@ a10[200] = 300;
 let a10_res = [];
 
 const f10 = () => {
+
+    const out = document.querySelector('.out-10');
+
+    for (let i = 0; i < a10.length; i++) {
+
+        if (a10[i] !== undefined) a10_res.push(`${i}`);
+
+    }
+
+    out.textContent = a10_res.join(' ');
+
 }
 
 document.querySelector('.b-1').addEventListener('click', f1);
