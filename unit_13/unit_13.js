@@ -145,6 +145,12 @@ let a9_res = [];
 
 const f9 = () => {
 
+    const out = document.querySelector('.out-9');
+
+    a9_res = Object.keys(a9);
+
+    out.textContent = a9_res.join(' ');
+
 }
 
 // TASK 10
