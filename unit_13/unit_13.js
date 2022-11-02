@@ -117,6 +117,15 @@ a8[200] = 300;
 let a8_res = [];
 
 const f8 = () => {
+
+    const out = document.querySelector('.out-8');
+
+    a8_res = Object.values(a8);
+
+    a8_res = Object.keys(a8);
+
+    out.textContent = a8_res.join(' ');
+
 }
 
 // TASK 09
