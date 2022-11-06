@@ -5,57 +5,52 @@
 let a1 = [4, 12, 4, 2, 15, 98];
 
 const f1 = () => {
-
     const iq = Number(document.querySelector('.i-1').value);
 
     const out = document.querySelector('.out-1');
 
     out.textContent = a1.includes(iq);
-
-}
+};
 
 // TASK 02
 // По нажатию b-2 выполняется функция f2. Функция считывает значение из i-2 и с помощью includes проверяет наличие подобного элемента в массиве a2. Выводит в out-2  false, если такого элемента нет в массиве, и ИНДЕКС элемента если есть. Констатация наличия выполняется через includes. Нахождение индекса либо через indexOf или через цикл. Сравните данную задачу с задачей 2 из юнита 1. Подумайте какой из методов: includes, indexOf более удобен для данной задачи.
 // Как тестируется - ввожу числа и проверяю результат.
 
-
 let a2 = [4, 12, 4, 2, 15, 98];
 
 const f2 = () => {
-
     const iq = Number(document.querySelector('.i-2').value);
 
     const out = document.querySelector('.out-2');
 
     out.textContent = a2.includes(iq) && a2.indexOf(iq);
-
-}
+};
 
 // TASK 03
 // По нажатию b-3 выполняется функция f3. Функция считывает значение из i-3 и с помощью includes ищет данный элемент во вложенных массивах массива a3. Выводит в out-3  false, если такого элемента нет и true если есть. Обратите внимание! Только числа!
 // Как тестируется - ввожу числа и проверяю результат.
 
-
-let a3 = [[3, 4, 5], [6, 7, 1], [5, 6, 7, 1, 12], [134, 234, 432]];
+let a3 = [
+    [3, 4, 5],
+    [6, 7, 1],
+    [5, 6, 7, 1, 12],
+    [134, 234, 432],
+];
 
 const f3 = () => {
-
     const iq = Number(document.querySelector('.i-3').value);
 
     const out = document.querySelector('.out-3');
 
-    out.textContent = a3.some(item => item.includes(iq));
-
-}
+    out.textContent = a3.some((item) => item.includes(iq));
+};
 
 // TASK 04
 // По нажатию b-4 выполняется функция f4. Функция считывает значение из i-4 и с помощью includes ищет данный элемент во вложенных массивах массива a4. Выводит в out-4  false, если такого элемента нет и ключ вложенного массива в котором такой элемент есть(если есть). Обратите внимание! Только числа! Если ключей несколько, то выводятся через пробел.
 
-
 let a4 = { a: [1, 2, 3], b: [3, 1, 5, 8], c: [88, 77, 66] };
 
 const f4 = () => {
-
     const iq = Number(document.querySelector('.i-4').value);
 
     const out = document.querySelector('.out-4');
@@ -63,20 +58,15 @@ const f4 = () => {
     let str = '';
 
     for (const key in a4) {
-
         if (a4[key].includes(iq)) {
-
             str += key + ' ';
 
             continue;
-
         }
-
     }
 
     out.textContent = str.length ? str : false;
-
-}
+};
 
 // TASK 05
 // По нажатию b-5 выполняется функция f5. Функция считывает значение из i-5-1 и индекс с которого начинается поиск в массиве с i-5-2 и с помощью includes  ищет данный элемент в массиве a5 c позиции указанной в i-5-2. Выводит в out-5 false если такого элемента при поиске с указанной позиции нет и true если есть.
@@ -85,11 +75,9 @@ const f4 = () => {
 // число 22 и индекс старта 0 - true
 // число 44 и индекс старта 8 - true
 
-
 let a5 = [22, 33, 44, 55, 66, 77, 88, 33, 44, 55, 66, 77];
 
 const f5 = () => {
-
     const iq = Number(document.querySelector('.i-5-1').value);
 
     const iq1 = Number(document.querySelector('.i-5-2').value);
@@ -97,69 +85,53 @@ const f5 = () => {
     const out = document.querySelector('.out-5');
 
     out.textContent = a5.includes(iq, iq1);
-
-}
+};
 
 // TASK 06
 // По нажатию b-6 выполняется функция f6. Функция считывает строку из i-6 и с помощью includes и ищет данный элемент в СТРОКЕ a6. Выводит в out-6 false если искомой строки нет в a6 и true если есть.
 // Изучите поведение введя по очереди Hi, HI, WIFI, wifi, wiFI
 
-
 let a6 = ['Hi', 'wiFI'];
 
 const f6 = () => {
-
     const iq = document.querySelector('.i-6').value;
 
     const out = document.querySelector('.out-6');
 
     out.textContent = a6.includes(iq);
-
-}
+};
 
 // TASK 07
 // По нажатию b-7 выполняется функция f7. Функция принимает 2 параметра, первый массив, второй - искомое число. Функция должна эмулировать работу метода includes с помощью цикла. Что понимается под эмуляцией? Мы не используем метод includes ( и indexOf тоже), а циклом перебираем массив и с помощью if решаем задачу. Функция должна только либо выводить в out-7 false, если искомого числа нет в массиве, или true если есть.
 
-
 let a7 = [21, 22, 23, 24, 25, 26, 27];
 
 const f7 = (arr, elem) => {
-
     const out = document.querySelector('.out-7');
 
     for (const item of arr) {
-
         if (elem === item) {
-
             out.textContent = true;
 
             break;
-
         } else {
-
             out.textContent = false;
-
         }
-
     }
-
-}
+};
 
 // TASK 08
 // По нажатию b-8 выполняется функция f8. Функция должна получить символ из i-8 и с помощью includes проверить есть ли подобный символ в строке a8 или нет. Если есть - вывести true, если нет false;
 
-
 let a8 = 'JSbestever';
 
 const f8 = () => {
-
     const iq = document.querySelector('.i-8').value;
 
     const out = document.querySelector('.out-8');
 
     out.textContent = a8.includes(iq);
-
-}
+};
 
 // TASK 09
 // По нажатию b-9 выполняется функция f9. Функция должна получить из i-9 символ и с помощью includes искать его в массиве a9. Обратите внимание на сложность. Если пользователь ввел символ в нижнем регистре то функция должна c помощью includes искать и в нижнем и в верхнем регистре символ в массиве. Если пользователь ввел число - то искать число. Считаем, что пользователь может ввести либо символы латинского алфавита, либо числа. Вывод true, false в out-9.
@@ -171,14 +143,15 @@ const f8 = () => {
 let a9 = ['A', 'b', 'c', 'C', 'D', 12, 5, 'd', 1];
 
 const f9 = () => {
-
     const iq = document.querySelector('.i-9').value;
 
     const out = document.querySelector('.out-9');
 
-    out.textContent = a9.includes(iq.toUpperCase()) || a9.includes(iq.toLowerCase()) || a9.includes(+iq);
-
-}
+    out.textContent =
+        a9.includes(iq.toUpperCase()) ||
+        a9.includes(iq.toLowerCase()) ||
+        a9.includes(+iq);
+};
 
 // TASK 10
 // Ну и на прокачку ваших скиллов. Часто попадется вопрос, в чем отличие includes от indexOf? Ответ - в поведении с NaN. Изучите и запомните пример ниже.
@@ -195,7 +168,7 @@ const f10 = () => {
         // выполнится
         console.log('Сработал includes');
     }
-}
+};
 
 // TASK 11
 // Ну и на прокачку ваших скиллов. Выполните код ниже. Изучите консоль. По очереди расскоментируйте строки  и смотрите на результат. Проанализируйте.
@@ -212,7 +185,7 @@ const f11 = () => {
     //c = undefined;
     //c = null;
     console.log(a11.includes(c));
-}
+};
 
 document.querySelector('.b-1').addEventListener('click', f1);
 
